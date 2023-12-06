@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@media only screen and (max-width: 660px) {
+  body {
+    min-width: 100%;
+  }
+
+  div.project-entry, div.iframe-content, div.carousel-content {
+    width: 100%;
+  }
+
+  p.text-block, p.text-block-sm {
+    width: 100%;
+    text-align: left;
+    word-wrap: break-word;
+  }
+
+  /* Flex causes issues where card sizes are not consistent  */
+  /* based on text in cards of the same row  */
+  /* hence the use of width: vw */
+  .card, .card-img-cover {
+    width: 85vw;
+    min-height: 200px;
+    padding: .25rem;
+    box-sizing: border-box;
+  }
+
+  /* For Tree View */
+  #bst-display {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  body {
+    min-width: 660px;
+  }
+
+  div.project-entry, div.iframe-content, div.carousel-content {
+    min-width: 560px;
+    max-width: 640px;
+  }
+
+  .card {
+    width: 560px;
+    height: 315px;
+  }
+
+  .card-img-cover {
+    width: 560px;
+    height: 315px;
+  }
+
+  p.text-block {
+    max-width: 700px;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+  
+  p.text-block-sm {
+    max-width: 640px;
+    text-align: justify;
+    word-wrap: break-word;
+  }
+
+  /* For Tree View */
+  #bst-display {
+    max-width: 640px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  color: #FFFFFF;
+  background-color: #222629;
+}
+
+span.id-jump {
+  display: block;
+  position: relative;
+  top: -48px; /*Navbar Height*/
+  visibility: hidden;
+}
+
+img.logo {
+  max-width: 80%;
+  margin-bottom: .5rem;
+}
+
+nav.navbar{
+  color: #FFFFFF;
+  background-color: #474A4F;
+  
+  /*max-height: 44px;*/
+  border-bottom: .15rem solid #5B9C30;
+}
+
+.navbar-toggler{
+  border: 0 transparent;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+i.nav-icon {
+  color: #FFFFFF;
+  font-size: 1.75rem;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a.nav-link {
+  color: #FFFFFF;
+  padding: .5rem, 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  transition: all .25s;
+}
+
+a.nav-link:hover {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  font-size: 1.5rem;
+  transition: all .25s;
+}
+
+a.nav-link:focus {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  font-size: 1.5rem;
+  transition: all .25s;
+}
+
+a.dropdown-item {
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: 300;
+  transition: all .25s;
+}
+
+a.dropdown-item:hover {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  font-size: 1.25rem;
+  transition: all .25s;
+}
+
+a.dropdown-item:focus {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  font-size: 1.25rem;
+  transition: all .25s;
+}
+
+a.cat-link {
+  color: #FFFFFF;
+  transition: all .25s;
+}
+
+a.cat-link:hover {
+  color: #5B9C30;
+  transition: all .25s;
+}
+
+a.cat-link:focus {
+  color: #5B9C30;
+  transition: all .25s;
+}
+
+li.dropdown:hover > div.dropdown-menu {
+ display: block;
+}
+
+div.dropdown-menu {
+  color: #FFFFFF;
+  background-color: #474A4F;
+
+  padding: 0;
+  margin: 0 !important;
+  border: 0 transparent;
+}
+
+div.img-cover {
+  height: auto;
+  max-height: fit-content(100%);
+  background-color: rgba(0, 0, 0, .8);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom: .15rem solid #5B9C30;
+}
+
+div.center-content {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+div.fit {
+  width: 100%;
+}
+
+div.cat-content {
+  border-top: .15rem solid #5B9C30;
+}
+
+div.footer {
+  border-top: .15rem solid #5B9C30;
+}
+
+div.carousel-inner {
+  border: 0.15rem solid #16191B;
+  border-radius: .25rem;
+}
+
+div.carousel-caption {
+  position: initial;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+div.carousel-indicators {
+  position: relative;
+  margin-bottom: 0;
+}
+
+div.carousel-indicators > button {
+  max-width: 15px;
+}
+
+button.carousel-control-prev, button.carousel-control-next {
+  width: 7.5%;
+}
+
+iframe {
+  border-radius: .25rem;
+}
+
+.add-border-bottom {
+  border-bottom: .15rem solid #5B9C30;
+}
+
+h3, h4, h5 {
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-weight: 200;
+  margin-bottom: 0;
+}
+
+h4.text-block-header {
+  text-decoration: underline solid #5B9C30;
+  margin-bottom: .75rem;
+}
+
+ul.list-style {
+  padding-left: 18px;
+  text-align: left;
+}
+
+i.card-icon {
+  font-size: 2.5rem;
+}
+
+i.cat-icon {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background-color: #474A4F;
+  border: none;
+}
+
+.card-img-cover{
+  color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 0.15rem solid #474A4F;
+  border-radius: .25rem;
+  transition: all .25s;
+}
+
+.card-img-cover:hover{
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, .875);
+  background-blend-mode: color;
+  border-color: #5B9C30;
+  transition: all .25s;
+}
+
+a:focus > .card-img-cover{
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, .875);
+  background-blend-mode: color;
+  border-color: #5B9C30;
+  transition: all .25s;
+}
+
+.btn {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  font-size: 1rem;
+  padding: .55rem .75rem;
+}
+
+.btn-outline {
+  color: #FFFFFF;
+  background-color: transparent;
+  border: .15rem solid #5B9C30;
+  border-radius: .25rem;
+  font-size: 1rem;
+  padding: .55rem .75rem;
+}
+
+.btn-outline:hover {
+  color: #FFFFFF;
+  background-color: #5B9C30;
+  transition: all .25s;
+}
+
+.text-block-header {
+  text-align: left;
+}
+
+p.caption {
+  font-size: .75rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  margin: 0;
+}
+
+p.footer-text {
+  font-size: .75rem;
+  font-weight: 200;
+  margin-bottom: 0.25rem;
+}
+
+/* For Tree View */
+#bst-display {
+  text-align: left;
+}
+
+ul.tree-view {
+  list-style-type: none;
+  display: block;
+}
+
+.caret {
+  cursor: pointer;
+}
+
+.caret::before {
+  content: "\25B6";
+  display: inline-block;
+  margin-right: 6px;
+  transform: rotate(90deg);
+}
+
+.caret-hide::before {
+  transform: rotate(0deg);
+  transition: all .2s;
+}
+
+ul.hide-tree {
+  display: none;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+  <title>PykXell - Mananite</title>
+  <link rel="shortcut icon" href="images/home/pykxell-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mananite - SP DGDD/Tower Defense Game">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4d84cca20b.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-md p-0">
+    <div class="container-fluid p-0">
+      <button class="navbar-toggler mx-4 px-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNav" aria-controls="collapsibleNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="nav-icon fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link px-4" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-4" href="index.html#about">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle px-4" href="#" id="worksDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="worksDropdown">
+              <a class="dropdown-item px-4" href="games.html">Games</a>
+              <a class="dropdown-item px-4" href="ar-vr.html">AR/VR</a>
+              <a class="dropdown-item px-4" href="others.html">Others</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Cover -->
+  <div class="center-content container-fluid img-cover px-4 py-5" style="background-image: url(images/mananite/cover.png); min-height: 520px" title="Mananite Cover">
+    <div class="center-content flex-column">
+      <img class="logo" src="images/mananite/logo.png" style="width: 475px;" alt="Mananite Logo"/>
+      <h3 class="mb-1">SP DGDD/Tower Defense Game</h3>
+      <h6>Lastest Update: 2019</h6>
+    </div>
+  </div>
+  <!-- Page Contents -->
+  <div class="container-fluid px-4 py-5 project-entry">
+    <div class="center-content flex-column">
+      <div class="iframe-content ratio ratio-16x9 mb-5">
+        <iframe src="https://www.youtube.com/embed/H-2qcO8Y8E8" title="Mananite Gameplay Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div>
+        <div class="mb-5">
+          <h4 class="text-block-header">Game Description</h4>
+          <p class="text-block-sm">
+            As the Kingdom faces an incoming horde of the undead, an opportunist finds a way to earn his keep!
+            Play as a Mercenary Tower Builder and fight against the horde to protect Crystal Structures essential to the Kingdom's survival.
+            Choose to build your own towers or invest in existing ones and make your cut. No, your job here is not to protect the Kingdom, it is just to make money!
+          </p>
+        </div>
+        <div class="center-content carousel-content mb-5">
+          <div id="imgCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/mananite/cover.png" class="d-block w-100" alt="Mananite - Cover Art">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="caption">Mananite Cover Art</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mananite/img-1.png" class="d-block w-100" alt="Mananite Gameplay - Prebuilt Red Catapult">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="caption">Prebuilt Red Catapult</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mananite/img-2.png" class="d-block w-100" alt="Mananite Gameplay - Preparation Phase">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="caption">Preparation Phase</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/mananite/img-3.png" class="d-block w-100" alt="Mananite Gameplay - Battle Phase">
+                <div class="carousel-caption d-none d-md-block">
+                  <p class="caption">Battle Phase</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imgCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imgCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Image 1"></button>
+              <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="1" aria-label="Image 2"></button>
+              <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="2" aria-label="Image 3"></button>
+              <button type="button" data-bs-target="#imgCarousel" data-bs-slide-to="3" aria-label="Image 4"></button>
+            </div>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h4 class="text-block-header">Game Features</h4>
+          <ul class="list-style">
+            <li>Unique Mechanic of Turret Investment</li>
+            <li>Unique Win Objective compared to other Tower Defense Games</li>
+            <li>Strong Emphasis on Resource Management</li>
+            <li>Multiple Turret types to counter different types of Enemies</li>
+            <li>Build Strategies around existing allied AI Towers</li>
+          </ul>
+        </div>
+        <div class="mb-5">
+          <div class="d-flex flex-row justify-content-center">
+            <a class="btn-outline" target="_blank" href="https://www.mediafire.com/file/k7qxuswsdh9tpcl/Mananite.zip/file">
+              <i class="fa-solid fa-gamepad pe-1"></i></i>
+              Mananite (.ZIP)
+            </a>
+          </div>
+        </div>
+        <div class="mb-5">
+          <h4 class="text-block-header">Project Information</h4>
+          <p class="text-block-sm">
+            Mananite is a 3D Tower Defense Game as part of a studio project during my diploma studies.
+            We wanted to develop a game where it foregoes the standard win condition of survival, and focus on other objectives, which led to the design of an additional investment feature,
+            coupled with the main goal of earning enough of the game's currency, Mana.
+          </p>
+          <p class="text-block-sm">
+            Some notable contributions I had in this project was the development of turrets, which is done through polymorphism,
+            as well as the development of the Mana system - the uses, how it is earned, and how it works as a game objective.
+            I was also heavily involved with GUI animations and the development of visual feedback for the game.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-block-header">Roles and Responsibilities</h4>
+          <ul class="list-style">
+            <li>Assistant-Producer</li>
+            <li>Programmer</li>
+            <li>Development of Turrets</li>
+            <li>Development of Mana System</li>
+            <li>Integration of UI and Visual Feedback</li>
+            <li>Development of GUI Animations</li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <!-- Projects by Category-->
+  <div class="cat-content center-content container-fluid px-4 py-4">
+    <div class="center-content flex-column">
+      <h3 class="mb-4">Browse Projects by Category</h3>
+      <div class="row">
+        <div class="col-md mb-4">
+          <div class="px-5">
+            <a class="cat-link" href="games.html">
+              <div class="center-content flex-column">
+                <i class="cat-icon fa-solid fa-gamepad"></i>
+                <h4>Games</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md mb-4">
+          <div class="px-5">
+            <a class="cat-link" href="ar-vr.html">
+              <div class="center-content flex-column">
+                <i class="cat-icon fa-solid fa-vr-cardboard"></i>
+                <h4>AR/VR</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md mb-4">
+          <div class="px-5">
+            <a class="cat-link" href="others.html">
+              <div class="center-content flex-column">
+                <i class="cat-icon fa-solid fa-laptop-code"></i>
+                <h4>Others</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Note -->
+  <div class="footer center-content container-fluid px-4">
+    <div class="center-content flex-column my-2">
+      <p class="footer-text">Powered by Bootstrap 5 and Fontawesome 6</p>
+      <p class="footer-text">Last Updated: 22 May 2022</p>
+    </div>
+  </div>
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
